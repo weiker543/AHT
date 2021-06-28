@@ -1,0 +1,247 @@
+@media (min-width: 320px) and (max-width: 680px) {
+  .header-list {
+    display: none !important;
+  }
+
+  .steps-list {
+    flex-direction: column;
+    justify-content: left;
+  }
+  .steps-list__item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .steps-list__border {
+    display: none !important;
+  }
+
+  .fields-conent {
+    width: 100% !important;
+  }
+  .fields-block__input {
+    margin: 0 auto;
+    width: auto;
+  }
+  .fields-block__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fields-block__title {
+    text-align: center;
+  }
+  .fields-block__input-img {
+    display: none;
+  }
+
+  .prod-block__content {
+    display: flex;
+    margin-top: 12px;
+    flex-direction: column;
+  }
+  .prod-block__title {
+    text-align: center;
+  }
+  .prod-block__p {
+    width: 100% !important;
+  }
+  .prod-block__img {
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+  .prod-block__text {
+    text-align: center;
+  }
+  .prod-block__description {
+    display: flex;
+    text-align: center;
+    margin: 12px auto;
+    justify-content: center;
+  }
+  .prod-var__title {
+    text-align: center;
+  }
+  .prod-type__title {
+    margin-left: 2rem;
+  }
+  .prod-type__list {
+    display: flex;
+    margin-top: 8px;
+    margin-left: 2rem;
+    flex-direction: column;
+  }
+
+  .products-add {
+    justify-content: center;
+    margin-top: 10px !important;
+  }
+  .products-content__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .products-right__title {
+    text-align: center;
+  }
+
+  .post-item__btn {
+    width: 100% !important;
+  }
+
+  .add-action__btn {
+    width: 100% !important;
+  }
+
+  .step-2__title {
+    font-size: 23px !important;
+  }
+  .step-2-end__list {
+    flex-direction: column;
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+  .step-2-end__btn {
+    margin: 5px 0;
+  }
+  .step-2-end__next {
+    width: auto !important;
+  }
+
+  .second-item {
+    width: auto !important;
+  }
+
+  .language-content__item {
+    flex-direction: column;
+  }
+  .language-content__btn {
+    margin-left: 0 !important;
+  }
+  .language-content__title {
+    font-size: 21px !important;
+    text-align: center;
+  }
+  .language-item__number {
+    text-align: center;
+  }
+  .language-item__input {
+    width: auto !important;
+  }
+  .language-item__input-cover {
+    flex-direction: column;
+  }
+  .language-item__check-list {
+    margin-top: 10px;
+  }
+
+  .products-item__title {
+    margin-top: 8px;
+  }
+  .products-left__url-list {
+    flex-direction: column;
+    width: auto !important;
+  }
+  .products-right__img {
+    margin-bottom: 10px !important;
+  }
+
+  .choose-domain__input-list {
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .step-1__offer-p {
+    text-align: center !important;
+  }
+
+  .liner-content__img {
+    margin: 0 auto;
+  }
+  .liner-content__btn {
+    width: 100% !important;
+    border-radius: 3px;
+  }
+  .liner-title {
+    text-align: center;
+    width: 100% !important;
+    font-size: 23px !important;
+  }
+  .liner-download__pdf {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .choose-disign {
+    margin-bottom: 36px;
+  }
+  .choose-content__right {
+    justify-content: center !important;
+  }
+  .choose-content__title {
+    font-size: 25px !important;
+  }
+
+  .report-table__p {
+    font-size: 9px !important;
+  }
+  .report-inner__content {
+    flex-direction: column;
+  }
+  .report-inner__link {
+    margin-bottom: 12px;
+  }
+  .report__p-mobile {
+    display: none;
+  }
+  .report-tabs__list {
+    margin-left: 1.1rem;
+  }
+  .report-tabs__table-cover {
+    overflow-x: scroll;
+  }
+
+  .mb-m {
+    margin-bottom: 0 !important;
+  }
+
+  .table-cover {
+    overflow-x: scroll;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    width: 70%;
+    background-color: #fff;
+    height: 100%;
+    right: -100%;
+    margin-top: 1px;
+    z-index: 30;
+    display: block !important;
+  }
+  .mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-menu__item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 6px 10px;
+  }
+
+  .domain-form {
+    width: 100% !important;
+  }
+  .domain-form__label {
+    text-align: center;
+  }
+  .domain-form__submit {
+    width: 100% !important;
+  }
+
+  .mobile-burger {
+    display: block !important;
+    cursor: pointer;
+  }
+  .mobile-burger i {
+    font-size: 25px;
+    color: #beb7b7;
+  }
+}

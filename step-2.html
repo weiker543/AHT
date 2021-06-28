@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/dist/styles.css">
+    <title>Amazon</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo"> 
+                    <a href="index.html">
+                        <img src="assets/header-logo.png" alt="header-logo">
+                    </a>
+                </div>
+                <div class="mobile-burger">
+                    <i id="burger" class="fas fa-bars"></i>
+                </div>
+                <div class="header-list"> 
+                    <div class="header-list__item">
+                        <a href="index.html" class="header-list__link">
+                            Акции
+                        </a>
+                    </div> 
+                    <div class="header-list__item">
+                        <a href="domain.html" class="header-list__link">
+                            Домены
+                        </a>
+                    </div>
+                    <div class="header-list__item">
+                        <a href="mail:email@of-accaunt.com" class="header-list__link">
+                            email@of-accaunt.com
+                        </a>
+                    </div>
+                    <div class="header-list__item">
+                        <a href="#" class="header-list__link">
+                            Выход 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <div class="mobile-menu__list"> 
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    Акции
+                </a>
+            </div>
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    Домены
+                </a>
+            </div>
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="mail:email@of-accaunt.com">
+                    email@of-accaunt.com
+                </a>
+            </div>
+            <div class="mobile-menu__item">
+                <a class="mobile-menu__link" href="mail:email@of-accaunt.com">
+                    Выход 
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="steps">
+        <div class="container">
+            <div class="steps-content">
+                <div class="steps-list">
+                    <div class="steps-list__item">
+                        <div class="steps-item__img-cover">
+                            <img class="steps-item__img" src="assets/checked-img.png" alt="">
+                        </div>
+                        <div class="steps-item__text">
+                            <h4 class="steps-item__title">Шаг 1</h4>
+                            <p class="steps-item__p">
+                                Товары, подарки
+                            </p>
+                        </div>
+                    </div>
+                    <div class="steps-list__border"></div>
+                    <div class="steps-list__item">
+                        <div class="steps-item__img-cover">
+                            <img class="steps-item__img" src="assets/step-2-checked.png" alt="">
+                        </div>
+                        <div class="steps-item__text">
+                            <h4 class="steps-item__title">Шаг 2</h4>
+                            <p class="steps-item__p ">
+                                Вариации, если есть
+                            </p>
+                        </div>
+                    </div>
+                    <div class="steps-list__border steps-list__border-latest"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section class="prod-var">
+       <div class="container">
+            <div class="prod-var__content">
+                <h3 class="prod-var__title step-2__title">Заполнение языковых версий для ссылки domain.com/opinion</h3>
+                <div class="step-2__input">
+                    <div class="step-2__input-item">
+                        Язык для правки
+                    </div>
+                    <div class="step-2__input-item second-item">
+                        <div class="step-2__input-title">
+                            <div class="step-2__input-lang">
+                                RU
+                            </div>
+                            <div class="step-2__input-name">
+                                Русский
+                            </div>
+                        </div>
+                        <div class="step-2__input-icon">
+                            <img src="../assets/input-vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-var__block">
+                     <div class="prod-block">
+                        <h3 class="step-2__block-title">Товары</h3>
+                        <h4 class="prod-block__title ">Языковая версия товара вариации</h4>
+                        <div class="prod-block__content">
+                            <div class="prod-block__img">
+                            </div>
+                            <div class="prod-block__text">
+                                <div class="step-2-block__info">
+                                   <h5 class="step-2-block__title"> RU </h5> 
+                                    <p>
+                                        Название товара, название товара, название товар
+                                    </p>
+                                </div>
+                                <div class="prod-block__description">
+                                    <div class="prod-description__name">ASIN:</div>
+                                    <div class="prod-description__value">BBBBBBBBL6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="prod-type">
+                        <h3 class="prod-type__title">Тип Вариации</h3>
+                        <div class="prod-type__list">
+                            <div class="prod-type__item">                                
+                                <input class="prod-type__check" type="checkbox" name="" id="">
+                                <p>цвет</p>
+                            </div>
+                            <div class="prod-type__item">
+                                <input class="prod-type__check" type="checkbox" name="" id="">
+                                <p>Вес</p>
+                            </div>
+                            <div class="prod-type__item">
+                                <input class="prod-type__check" type="checkbox" name="" id="">
+                                <p>Имя Вариации</p>
+                            </div>
+                            <div class="prod-type__item">
+                                <input class="prod-type__check" type="checkbox" name="" id="">
+                                <p>Размер</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </section>
+
+   <section class="products fields">
+    <div class="container">
+        <div class="products-content fields-content">
+            <div class="products-content__list">
+                <div class="products-content__item">
+                    <div class="products-item__left">
+                        <div class="products-left__number">
+                            <h2>1</h2>
+                        </div>
+                        <div class="fields-block">
+                            <div class="fields-block__list">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="fields-block__item">
+                                            <div class="fields-block__title">ASIN</div>
+                                            <input placeholder="ASIN" class="fields-block__input gray-input"  type="text">
+                                        </div>
+                                        <div class="fields-block__item">
+                                            <div class="fields-block__title">Вес</div>
+                                            <label class="fields-block__input fields-label">
+                                                <div class="label-ru">RU</div>
+                                                <div class="label-weight">1 Кг</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="fields-block__item">
+                                            <div class="fields-block__title">цвет</div>
+                                            <input placeholder="#33902B" class="fields-block__input gray-input" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-item__right">  
+                        <div class="products-right__title-cover">
+                            <h3 class="products-right__title">Предпросмотр товара</h3> 
+                        </div>
+                        <div class="products-right__img"></div>
+                    </div>
+                </div>
+                <div class="products-content__item">
+                    <div class="products-item__left">
+                        <div class="products-left__number">
+                            <h2>2</h2>
+                        </div>
+                        <div class="fields-block">
+                            <div class="fields-block__list">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="fields-block__item">
+                                            <div class="fields-block__title">ASIN</div>
+                                            <input placeholder="ASIN" class="fields-block__input gray-input" type="text">
+                                        </div>
+                                        <div class="fields-block__item">
+                                            <div class="fields-block__title">Вес</div>
+                                            <input placeholder="2 Кг" class="fields-block__input" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="fields-block__item">
+                                            <div class="fields-block__title">URL картинки</div>
+                                            <div class="fields-block__input-cover">
+                                                <input placeholder="http://" class="fields-block__input gray-input" type="text">
+                                                <img class="fields-block__input-img" src="../assets/gift-img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-item__right">  
+                        <div class="products-right__title-cover">
+                            <h3 class="products-right__title">Предпросмотр товара</h3> 
+                        </div>
+                        <div class="products-right__img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section class="prod-var">
+    <div class="container">
+         <div class="prod-var__content">
+             <div class="prod-var__block">
+                <div class="prod-block">
+                     <h4 class="prod-block__title">Языковая версия товара вариации</h4>
+                     <div class="prod-block__content">
+                         <div class="prod-block__img label-img">
+                         </div>
+                         <div class="prod-block__text">
+                            <label class="fields-block__input fields-label w-auto">
+                                <div class="label-text">
+                                    Название товара, название товара, название товар
+                                </div>
+                            </label>
+                            <div class="label-block">
+                                <h6 class="label-block__title">ASIN</h6>
+                                <div class="fields-block__input gray-input">
+                                    <h6 class="label-title"> BBBBBBBBL6 </h6>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                </div>
+             </div>
+         </div>
+    </div>
+   </section>
+   <!-- ====ВАРИАЦИИ ПОДАРКОВ==== -->
+    <section class="prod-var">
+    <div class="container">
+         <div class="prod-var__content">
+             <h3 class="prod-var__title">Подарки</h3>
+             <div class="prod-var__block">
+                <div class="prod-block">
+                     <h4 class="prod-block__title">Языковая версия товара вариации</h4>
+                     <div class="prod-block__content">
+                        <div class="prod-block__img label-img">
+                        </div>
+                         <div class="prod-block__text">
+                            <label class="fields-block__input fields-label w-auto">
+                                <div class="label-text">
+                                    Название товара, название товара, название товар
+                                </div>
+                            </label>
+                            <div class="label-block">
+                                <h6 class="label-block__title">ASIN</h6>
+                                <div class="fields-block__input gray-input">
+                                    <h6 class="label-title"> BBBBBBBBL6 </h6>
+                                </div>
+                            </div>  
+                         </div>
+                     </div>
+                 </div>
+                 <div class="prod-type">
+                     <h3 class="prod-type__title">Тип Вариации</h3>
+                     <div class="prod-type__list">
+                         <div class="prod-type__item">                                
+                             <input class="prod-type__check" type="checkbox" name="" id="">
+                             <p>цвет</p>
+                         </div>
+                         <div class="prod-type__item">
+                             <input class="prod-type__check" type="checkbox" name="" id="">
+                             <p>Вес</p>
+                         </div>
+                         <div class="prod-type__item">
+                             <input class="prod-type__check" type="checkbox" name="" id="">
+                             <p>Имя Вариации</p>
+                         </div>
+                         <div class="prod-type__item">
+                             <input class="prod-type__check" type="checkbox" name="" id="">
+                             <p>Размер</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+    </section>
+
+    <section class="products fields">
+        <div class="container">
+            <div class="products-content fields-content">
+                <div class="products-content__list">
+                    <div class="products-content__item">
+                        <div class="products-item__left">
+                            <div class="products-left__number">
+                                <h2>  </h2>
+                            </div>
+                            <div class="fields-block">
+                                <div class="fields-block__list">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="fields-block__item">
+                                                <div class="fields-block__title">ASIN</div>
+                                                <input placeholder="ASIN" class="fields-block__input gray-input"  type="text">
+                                            </div>
+                                            <div class="fields-block__item">
+                                                <div class="fields-block__title">Вес</div>
+                                                <label class="fields-block__input fields-label">
+                                                    <div class="label-ru">RU</div>
+                                                    <div class="label-weight">1 Кг</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="fields-block__item">
+                                                <div class="fields-block__title">цвет</div>
+                                                <input placeholder="#33902B" class="fields-block__input gray-input" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-item__right">  
+                            <div class="products-right__title-cover">
+                                <h3 class="products-right__title">Предпросмотр товара</h3> 
+                            </div>
+                            <div class="products-right__img"></div>
+                        </div>
+                    </div>
+                    <div class="products-content__item">
+                        <div class="products-item__left">
+                            <div class="products-left__number">
+                                <h2>  </h2>
+                            </div>
+                            <div class="fields-block">
+                                <div class="fields-block__list">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="fields-block__item">
+                                                <div class="fields-block__title">ASIN</div>
+                                                <input placeholder="ASIN" class="fields-block__input gray-input"  type="text">
+                                            </div>
+                                            <div class="fields-block__item">
+                                                <div class="fields-block__title">Вес</div>
+                                                <label class="fields-block__input fields-label">
+                                                    <div class="label-ru">RU</div>
+                                                    <div class="label-weight">1 Кг</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="fields-block__item">
+                                                <div class="fields-block__title">цвет</div>
+                                                <input placeholder="#33902B" class="fields-block__input gray-input" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-item__right">  
+                            <div class="products-right__title-cover">
+                                <h3 class="products-right__title">Предпросмотр товара</h3> 
+                            </div>
+                            <div class="products-right__img"></div>
+                        </div>
+                    </div>
+                    <!-- =============================== -->
+                    <div class="prod-block">
+                        <h4 class="prod-block__title">Языковая версия товара вариации</h4>
+                        <div class="prod-block__content">
+                           <div class="prod-block__img label-img">
+                           </div>
+                            <div class="prod-block__text">
+                               <label class="fields-block__input fields-label w-auto">
+                                   <div class="label-text">
+                                       Название товара, название товара, название товар
+                                   </div>
+                               </label>
+                               <div class="label-block">
+                                   <h6 class="label-block__title">ASIN</h6>
+                                   <div class="fields-block__input gray-input">
+                                       <h6 class="label-title"> BBBBBBBBL6 </h6>
+                                   </div>
+                               </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================= -->
+                    <div class="step-2-end__block">
+                        <h3 class="step-2-end__title"> Вы дошли до конца, если вам нужно править ещё один язык, смените его сверху и внесите правки ещё раз </h3>
+                        <a class="step-2-end__up" href="#">Наверх</a>
+                        <div class="step-2-end__list">
+                            <div class="step-2-end__btn step-2-end__prev">
+                                <a class="step-2-end__link" href="add-language.html">Назад</a>
+                            </div>
+                            <div class="step-2-end__btn">
+                                <a class="step-2-end__link" href="report.html">Сохранить</a>
+                            </div>
+                            <div class="step-2-end__btn">
+                                <a href="report.html">Сохранить и далее</a>
+                            </div>
+                            <div class="step-2-end__btn step-2-end__next">
+                                <a class="step-2-end__link" href="domain.html">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html> 

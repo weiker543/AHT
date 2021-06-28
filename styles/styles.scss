@@ -1,0 +1,1182 @@
+
+$item : red ;
+$font : 'sans-serif' ;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Avenir Next Cyr' !important ;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+// ============= HEADER ================
+    .header{
+        -webkit-box-shadow: 0px 10px 5px -9px rgba(83, 89, 94, 0.6);
+        -moz-box-shadow: 0px 10px 5px -9px rgba(83, 89, 94, 0.6);
+        box-shadow: 0px 10px 5px -9px rgba(83, 89, 94, 0.6);
+        margin: 0;
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-logo{
+            cursor: pointer;
+        }
+        &-list{
+            display: flex; 
+            &__item{
+                margin: 0 0.5rem;
+                padding: 1rem 0;
+                border: 2px solid transparent;
+            }
+            &__link{
+                color: #000;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 14px;
+                &:hover{
+                    transition: all .1s linear;
+                    color: #1890FF;
+                    text-decoration: none;
+                }
+            }   
+        }
+    }
+    .header-link__active{
+        border-top: 2px solid #1890FF;
+        & a {
+            color: #1890FF;
+        }
+    }
+    .mobile{
+        &-burger{
+            display: none;    
+        }
+        &-menu{
+            display: none;
+            &__hide{
+                transition: all .5s linear;
+                right:-100%;        
+            }   
+            &__show{
+                transition: all .5s linear;
+                right: 0;
+            } 
+        }
+    }
+// ============= HEADER-END =============
+
+// ============= STEP-1 ==================
+    .step-1{
+        &__done{
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+       &__offer{ 
+            &-cover{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            &-title{
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            &-p{
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.45) ;
+                padding-top: 12px;
+                padding-bottom: 36px;
+            }
+            &-btn{
+                color: #fff;
+                background-color: #1890FF;
+                display: block;
+                margin: 0 auto;
+                text-align: center; 
+                padding: 0.3rem 0; 
+                transition: all .1s linear;
+                border-radius: 5px;
+                font-weight: 600;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: darken($color: #1890FF, $amount: 10%) ;
+                }
+                & a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+// ============= STEP-1__END =============
+
+// ============= DOMAIN ================= 
+    .domain{
+        &-inner{
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            &__title{
+                font-family: 'Avenir Next Cyr';
+                font-weight: 700;
+                line-height: 38px;
+                font-size: 30px;
+            }
+        }
+        &-form{
+            margin-top: 40px;
+            width: 50%;
+            &__cover{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 24px;
+            }
+            &__input{
+                color: rgba(0, 0, 0, 0.45);
+                border: 1px solid #D9D9D9 ;
+                padding: 0.3rem;
+                border-radius: 3px;
+            }
+            &__submit{
+                border: 0;
+                display: block;
+                width: 40%;
+                cursor: pointer;
+                background: #1890FF;
+                border-radius: 2px;
+                color: #fff;
+                margin-top: 1rem;
+                padding: 0.3rem 0;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all .3s linear;
+                    background-color: #40A9FF;
+                }
+            }
+        }
+    }
+// ============= DOMAIN-END ============= 
+
+// ============= STEPS =================
+    .steps{
+        margin-top: 45px;
+        &-list{
+            display: flex;
+            align-items: center;
+            &__item{
+                display: flex;
+                align-items: center;
+                margin-top: auto;
+            }
+            &__border{
+                display: block;
+                width: 10%;
+                height: 1px;
+                content: "";
+                margin: 0 20px;
+                background-color: #1890FF;
+            }
+        }
+        &-item{
+            &__img{
+                margin-right: 8px;
+            }
+            &__title{
+                font-weight: 700;
+                font-size: 16px;
+                &-latest{
+                    color: gray;
+                }
+            }
+            &__p{
+                font-size: 14px;
+                &-latest{
+                    color: gray;
+                }
+            }
+        }
+    }
+    .steps-list__border-latest{
+        background-color: #bfbfbf ;
+    }
+    .final-step-img{
+        background-color: #1890FF;
+    }
+// ============= STEPS-END =============
+
+// ============= CHOOSE-DISIGN ==================
+    .choose{
+        &-disign{
+            margin-top: 36px;
+            &__item{
+                width: 100%;
+                height: 391px;
+                margin-bottom: 36px;
+                background: linear-gradient(0deg, rgba(190, 190, 190, 0.2), rgba(190, 190, 190, 0.2));
+                border-radius: 2px;
+            }
+        }
+        &-content{
+            &__title{
+                font-size: 30px;
+                font-weight: 700;
+                margin-bottom: 24px !important;
+            }
+            &__img{
+                margin: 0 auto;
+                &-cover{
+                    display: flex;
+                }
+            }
+            &__disign{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+            }
+            &__right{
+                display: flex;
+                justify-content: right;
+            }
+            &__btn{
+                background-color:#1890FF;
+                color: #fff;
+                text-align: center;
+                margin-top: 2rem;
+                font-weight:600;
+                padding: 0.2rem 0;
+                transition: all .1s linear;
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 36px;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: darken($color: #1890FF, $amount: 10%) ;
+                }
+            }
+        }
+    }
+    .title-right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .choose-check{
+        display: flex;
+        justify-content: flex-start;
+        &__text{
+            font-size: 14px;            
+            color: #000;
+            font-weight: 600;
+            margin-top: 24px;            
+        }
+        &__content{
+            display: flex;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__input{
+            margin-right: 10px;
+        }
+    }
+// ============= CHOOSE-DISIGN__END =============
+
+// ============= STEP-3 ==================
+    .liner{
+        margin-top: 49px;
+        &-content{
+            &__title{
+                font-weight: 600;
+                font-size: 30px;
+            }
+            &__list{
+                margin-top: 36px;   
+            }
+            &__images{
+                margin-top: 36px;
+            }
+            &__img{
+                margin-left: auto;
+                &-cover{
+                    display: flex;
+                }        
+            }
+            &__btn{
+                display: block;
+                background-color:#1890FF;
+                color: #fff;
+                text-align: center;
+                margin-top: 2rem;
+                font-weight:600;
+                padding: 0.2rem 0;
+                transition: all .1s linear;
+                width: 90%;
+                margin-left: 45px;
+                &-cover{
+                    display: flex ;
+                    width: 100%;
+                    justify-content: right;
+                }
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: darken($color: #1890FF, $amount: 10%) ;
+                }
+            }
+        }
+        &-disign{
+            &__item{
+                height: 239.71px;
+                width: 100%;
+                background: linear-gradient(0deg, rgba(190, 190, 190, 0.2), rgba(190, 190, 190, 0.2));
+                border-radius: 2px;
+                width: 170px;
+                margin: 0 auto;
+                margin-bottom: 36px;
+                transition: all .1s linear;
+                &:hover{
+                    cursor: pointer;
+                }        
+            }
+        }
+        &-title{
+            margin: 0 auto;
+            width: 80%;
+        }
+        &-download{
+            &__pdf{
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #D9D9D9;
+                border-radius: 3px;
+                padding: 0.3rem 0.3rem;
+                width: 80%;
+                margin-left: auto;
+                transition: all .1s linear;
+            }    
+        }
+        &-pdf{
+            cursor: pointer;
+            &__text{
+                font-size: 14px;
+                padding-left: 5px;
+            }
+        }
+    }
+    .liner-content__btn{
+        margin-left: 45px;
+    }
+// ============= STEP-3__END =============
+
+// ============= STEP-1-ACTION ==================
+    .add-action{
+        margin-top: 50px;
+        &__img{
+            margin-right: 8px;
+            width: 14px;
+            height: 14px;
+        }
+        &__btn{
+            background-color: #1890FF;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.5rem ;
+            display: inline-block;
+            border-radius: 30px;
+            font-size: 14px;
+            padding: 6px 10px;
+            transition: all .3s linear;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 14%;
+
+            &:hover{
+                color: #fff;
+                text-decoration: none;
+                background-color: #40A9FF;
+            }
+        }
+    }
+        // ============= ACTION-TABLE ==================
+            .table{
+                margin-top: 36px;
+                &-item{
+                    font-size: 14px;
+                    border-top: 1px solid #dee2e6;
+                    border-bottom: 1px solid #dee2e6;
+                    &__link{
+                        color: #000;
+                        &:hover{
+                            transition: all .1s linear;
+                            text-decoration: none;
+                        }
+                    }
+                    &__marketplace{
+                        color: #000;
+                        &:hover{
+                            transition: all .1s linear;
+                            text-decoration: none;
+                        }
+                    }
+                    &__icons{
+                        display: flex;
+                    }
+                }
+            }
+            .table-actions{
+                &__list{
+                    display: flex;
+                }
+                &__btn{
+                    color: #fff;
+                    font-weight: 600;
+                    background-color: #1890FF;
+                    border-radius: 3px;
+                    transition: all .3s linear;
+                    font-size: 13px !important;
+                    padding: 4px 16px ;
+                    margin-right: 5px;
+                    &:hover{
+                        color: #fff;
+                        text-decoration: none;
+                        background-color: #40A9FF;
+                    }
+                }
+                &__delete{ 
+                    background-color: #FF4D4F;
+                    transition: all .3s linear;
+                    &:hover{
+                        background-color: #FF7875;
+                    }
+                }
+                &__reports{
+                    background-color: #fff;
+                    color: #000;
+                    border: 1px dashed #D9D9D9;
+                    &:hover{
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+            .first-line{
+                border-radius: 2px 2px 0px 0px ;
+                background-color: #FAFAFA;
+                font-weight: 600;
+                border-top: none ;
+            }
+            .table-play{
+                &__img{
+                    margin-right: 5px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        // ============= ACTION-TABLE__END =============
+
+// ============= STEP-1-ACTION__END =============
+
+// ============= FIRST-STEP-DESKTOP ==================
+    .choose-domain{
+        margin-top: 35px;
+        &__title{
+            font-size: 30px;
+            font-weight: 700; 
+            margin-bottom: 36px;
+        }
+        &__input{
+            margin-bottom: 24px;
+            margin-right: 3px;
+            border: 1px solid #c7c7c7;
+            padding: 4px 10px;
+            border-radius: 3px; 
+            &-list{
+                display: flex;
+                flex-direction: column ;
+                width: 41%;
+                margin-left: 29px;
+            }
+        }
+        &__link{
+            margin-bottom: 12px;
+        }
+    }
+// ============= FIRST-STEP-DESKTOP__END =============
+
+// ============= PRODUCTS ======================
+    .products{
+        margin-top: 39px;
+        &-content{
+            &__title{
+                font-weight: 700;
+                font-size: 36px;
+                margin-bottom: 27px;
+            }
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .products-left{
+        &__number{
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: 700;  
+        }
+        &__input{
+            margin-bottom: 24px;
+            border: 1px solid #c7c7c7;
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+        &__url-list{
+            display: flex;
+            width: 64%;    
+        }
+        &__block{
+            &-list{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__block{
+            display: flex;
+            flex-direction: column;
+            width: 85%;    
+        }
+        &__title{ 
+            font-size: 14px;
+            margin-bottom: 13px;
+            &-cover{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+.products-item{
+    &__input{
+        display: inline;
+        text-align: center;
+        margin-top: 12px;
+        font-size: 16px;
+        width: 100%;    
+    }
+    &__cover{
+        display: flex; 
+        align-items: center;
+        margin-top: 12px;    
+    }
+    &__title{
+        font-size: 14px;    
+    }
+    &__left{
+        display: flex;    
+    }
+    &__check{
+        margin-right: 5px;
+    }
+}
+
+.products-url{
+    &__item{
+        margin-right: 12px;    
+    }
+    &__btn{
+        border: 1px solid #000;
+    }
+}
+.products-add{
+    display: flex;
+    margin-top: 1rem;
+}
+.gift{
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: 600;
+    color: #000;
+    border : 1px solid #c7c7c7;
+    &:hover{
+        color: #000;
+        text-decoration: none;
+    }
+}
+.products-right{
+    &__img{ 
+        margin: 0 auto;
+        background-color: #F4F9FF;
+        width: 142px;
+        height: 142px;
+        margin-top: 15px;
+    }
+    &__title{
+        font-size: 14px;
+    }
+}
+.products-cover{
+    position: relative;
+    &__img{
+        cursor: pointer;
+        position: absolute;
+        top: 27px ;
+        right: -9.99rem;
+    }
+}
+//====================================
+
+//================ POST ====================
+    .post{
+        margin-top: 68px;
+        margin-bottom: 10rem;
+        &-content{
+            &__item{
+                margin-left: 30px;
+            }
+        }
+        &-item{
+            &__title{
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 12px;
+                margin-top: 20px;
+            }
+            &__input{
+                width: 90%;
+                width: 89%;
+                border: 1px solid #c7c7c7;
+                padding: 4px 10px;
+                border-radius: 3px;
+            }
+            &__btn{
+                margin-top: 30px;
+                padding: 4px 10px;
+                border-radius: 3px;
+                text-decoration: none;
+                background-color: #1890FF;
+                display: block;
+                color: #fff;
+                width: 89%;
+                font-weight: 700;
+                font-size: 14px;
+                text-align: center;
+                transition: all .3s linear;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: #40A9FF;
+                }
+            }
+        }
+    }
+//================ POST-END ================
+
+//================ PROD-VAR =====================
+    .prod-var{
+        margin-top: 36px;
+        &__title{
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+    .prod-block{
+        &__title{
+            font-size: 14px;
+            margin-top: 36px;
+        }
+        &__content{
+            display: flex;
+            margin-top: 12px;
+        }
+        &__img{
+            width: 100px;
+            height: 100px;
+            background: #F4F9FF;
+            border-radius: 3px;
+        }
+        &__text{
+            margin-left: 12px;
+        }
+        &__p{
+            width: 55%;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__description{
+            margin-top: 12px;
+            display: flex;
+        }
+    }
+    .prod-description{
+        &__name{
+            color: rgba(0, 0, 0, 0.45);
+        }
+        &__value{
+            font-weight: 700;
+        }
+    }
+    .prod-type{
+        &__title{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        &__list{
+            display: flex;
+            margin-top: 8px;
+        }
+        &__item{
+            display: flex;
+            font-weight: 700;
+            margin-right: 27px;
+            font-size: 16px;
+            align-items: center;
+        }
+        &__check{
+            margin-right: 8px;
+        }
+    }
+//================ PROD-VAR__END ================
+
+//================ FIELDS ====================
+    .fields{
+        &-content{
+            width: 75%;
+            width: 57%;
+        }
+        &-block{
+            width: 85%;
+            &__item{
+                margin-bottom: 20px;
+            }
+            &__title{
+                margin-bottom: 14px;
+            }
+            &__input{
+                border: 1px solid #c7c7c7;
+                padding: 4px 10px;
+                border-radius: 3px;
+                width: 160px;
+                &-cover{
+                    display: flex;
+                    position: relative;
+                }
+                &-img{
+                    position: absolute;
+                    margin-left: 10px;
+                    left: 10.3rem;
+                }
+            }
+        }
+        &-add{
+            margin-top: 60px;    
+        }
+        &-label{
+            display: flex;     
+        }
+    }
+    .gray-input{
+        background: #F5F5F5;
+    }
+    .label{
+        &-ru{
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.25);
+            margin-right: 8px;    
+        }
+        &-weight{
+            font-size: 16px;    
+        }
+        &-text{
+            font-size: 16px;
+        }
+        &-block{
+            &__title{
+                margin-top: 20px;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+        }
+        &-title{
+            color: rgba(0, 0, 0, 0.25);
+            font-size: 16px;
+        }
+        &-img{
+            width: 136px;
+            height: 136px;
+        }
+    }
+ 
+//================ FIELDS-END ================
+
+//================ LANGUAGE ====================
+    .language{
+        &-content{
+            &__title{
+                margin-top: 36px;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            &__list{
+                display: flex;
+                flex-direction: column;
+            }
+            &__item{
+                margin-top: 44px;
+                margin-bottom: 10px;
+                display: flex;
+            }
+            &__btn{
+                width:  30%;
+                margin-left: 14px;
+                margin-bottom: 3rem;
+            }
+        }
+        &-item{
+            &__number{
+                padding-right: 10px;
+                & h2{
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+            }
+            &__title{
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+            &__input{
+                border: 1px solid #c7c7c7;
+                padding: 4px 10px;
+                border-radius: 3px;
+                width: 311px;
+                color: #000;
+                &-cover{
+                    display: flex;
+                }
+            }
+            &__p{
+                font-size: 14px;
+                font-weight: 600;
+            }
+            &__check{
+
+                margin-right: 5px;
+                margin-left: 10px;
+
+                &-list{
+                    display: flex;
+                    align-items: center;
+                }
+
+            }
+            &__link{
+                margin-top: 24px;
+                margin-bottom: 12px;
+                font-size: 14px;
+                & a {
+                    color: #000;
+                }
+                & .first-link{
+                    color: #1890FF;   
+                }
+            }
+            &__set{
+                display: flex;
+                & input{
+                    width: 140px;
+                    background: #F5F5F5;
+                    border: 1px solid #D9D9D9;
+                    padding: 4px 10px;
+                }
+            }
+            &__radio{
+                width: auto !important;
+                margin: 0 8px;
+
+                &-list{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .language-item__input::placeholder{
+        color: #000;
+        font-weight: 700;
+    }
+//================ LANGUAGE-END ================
+
+//================ REPORT ====================
+    .report-inner{
+        margin-top: 50px;
+        &__list{
+            font-weight: 600;
+            display: flex;
+        }
+        &__item{
+            margin-right : 25px;
+        }
+        &__link{
+            font-size: 16px;
+        }
+        &__title{
+            margin-top: 12px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        &__table{
+            display: flex;
+        }
+        &__col{
+            padding: 12px;
+            border-right: 1px solid #F0F0F0 ;
+        }
+        &__name{
+            margin-bottom: 18px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        &__number{
+            font-weight: 600;
+            font-size: 14px;
+        }
+        &__content{
+            display: flex;  
+            justify-content: space-between;
+            width: 60%;
+            width: 70%;
+            align-items: center;
+            margin-left: 3rem;    
+        } 
+    }
+    .report-tabs{
+        margin-top: 35px;
+        &__list{
+            display: flex;
+            margin-bottom: 40px;
+        }
+        &__item{ 
+            font-weight: 600;
+            cursor: pointer;
+            margin-right: 52px;
+            font-size: 13px;
+            & a {
+                color: #000;
+                &:hover{
+                    text-decoration: none;
+                    color: #1890FF  ;
+                }
+            }
+        }
+    }
+    .active-tab{
+       
+        & a {
+            transition: all .3s linear;
+            color : #1890FF ;
+       }
+    }
+    .report-table{
+        &__line{
+            padding: 1rem;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 24px !important;
+            &-head{
+                background: #FAFAFA;
+                & * {
+                    font-weight: 700;
+                }
+            }
+        }
+        &__item{
+            padding: 1rem  ;
+            font-size: 14px;
+            vertical-align: top;
+            // width: 13%;
+            // padding-bottom: 24px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__p{
+            font-size: 14px;
+        }
+        &__yes{
+            font-size: 14px;
+            font-weight: 600;
+        }
+        &__img{
+            cursor: pointer;
+        }
+    }
+    .report-head__item{
+        // width: 40%;
+    }
+    .tabs-container{
+        max-width: 1316px;
+        margin: 0 auto;
+    }
+    .mb-p{
+        margin-bottom: 6rem  ;
+    }
+//================ REPORT-END ================
+
+//================ STEP-2 =====================
+    .step-2{
+        &__title{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &__input{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &-title{
+                display: flex;
+            }
+            &-lang{
+                color: rgba(0, 0, 0, 0.25);
+            }
+            &-name{
+                margin-left: 8px;
+                font-weight: 600;
+            }
+            &-item{
+                display: flex;
+                justify-content: space-between;
+            }
+            &-icon{
+                cursor: pointer;
+            }   
+        }
+    }
+    .second-item{
+        border: 1px solid #c7c7c7;
+        padding: 5px 15px;
+        width: 20%;
+        width: 17%;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .step-2{
+        &__block{
+            &-title{
+                font-size: 30px;
+                font-weight: 700;
+                margin-top: 36px;
+            }    
+        }
+    }
+    .step-2-block__title{
+        margin-right: 11px;
+    }
+    .step-2-block{
+        &__info{
+            display: flex;
+            align-items: center;
+            border : 1px solid #c7c7c7;
+            border-radius: 3px;
+            padding: 4px 15px;
+        }
+        &__title{
+            color: #c7c7c7;
+            font-size: 16px ;
+        }
+    }
+    //================ STEP-2__END-LIST ================
+        .step-2-end{
+            &__block{
+                margin-top: 68px;
+                margin-bottom: 68px;
+            }
+            &__list{
+                display: flex;
+                width: 141%;
+            }
+            &__up{
+                display: inline-block;
+                margin-bottom: 25px;
+                font-weight: 600;
+            }
+            &__title{
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            &__btn{
+                padding: 4px 15px;
+                border-radius: 3px;
+                margin-right: 36px;
+                margin-right: 30px;
+                background-color: #1890FF;
+                display: inline;
+                transition: all .3s linear;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover{
+                    background: #40A9FF;
+                }
+                & a {
+                    font-size: 14px;
+                    color: #fff;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            &__prev{
+                border: 1px solid #c7c7c7; 
+                background-color: #fff;
+                display: inline;
+                &:hover{
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+                & a {
+                    color: rgba(0, 0, 0, 0.45);
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            &__next{
+                width: 20%;
+                width: 22%;
+                text-align: center;
+            }
+        }
+    //================ STEP-2__END-LIST ================
+
+//================ STEP-2__END ================
+
+@import url('../mobile/dist/mobile.css');
